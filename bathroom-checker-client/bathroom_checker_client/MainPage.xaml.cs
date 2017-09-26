@@ -68,11 +68,23 @@ namespace bathroom_checker_client
                     {
                         lblStatus.Text = @"Bathroom Occupied";
                         lblStatus2.Text = @":(";
+                        var duration = (DateTime.UtcNow - restroom.OccupiedOn);
+                        if (duration.TotalMinutes > 60)
+                            lblOccupiedTimer.Text = "over an hour!";
+                        if (duration.TotalMinutes > 30)
+                            lblOccupiedTimer.Text = "over 30 minutes!";
+                        else if (duration.TotalSeconds < 30)
+                            lblOccupiedTimer.Text = "just now";
+                        else
+                            lblOccupiedTimer.Text = ((int)duration.TotalMinutes) + " minutes and " + duration.Seconds + " seconds";
+
+                        lblOccupiedTimer.IsVisible = true;
                     }
                     lblStatus2.IsVisible = true;
                     actProgress.IsVisible = false;
-
+                    
                     await Task.Delay(1000 * 29); // refresh every 30 seconds
+                    lblOccupiedTimer.IsVisible = false;
                 }
                 else
                 {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bathroom_checker_client.Android", "bathroom-checker-client\bathroom_checker_client.Android\bathroom_checker_client.Android.csproj", "{902E6FF7-C32B-4364-B9C7-C36C5CDC9609}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bathroom_checker_client.android", "bathroom-checker-client\bathroom_checker_client.Android\bathroom_checker_client.android.csproj", "{902E6FF7-C32B-4364-B9C7-C36C5CDC9609}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bathroom_checker_client", "bathroom-checker-client\bathroom_checker_client\bathroom_checker_client.csproj", "{1039C17A-8D75-48B1-BA43-0F3FF1BEA673}"
 EndProject

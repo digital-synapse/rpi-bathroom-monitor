@@ -11,8 +11,9 @@
 
         <Label x:Name="lblStatus" Text="Checking Bathroom Status..." HorizontalOptions="Center" FontSize="Large"/>
         <Label x:Name="lblStatus2" Text="" HorizontalOptions="Center" FontSize="100" Rotation="90" IsVisible="False"/>
+        <Label x:Name="lblOccupiedTimer" Text="" HorizontalOptions="Center" FontSize="Medium"/>
         <ActivityIndicator x:Name="actProgress" Color="Blue" IsRunning="true" />
         <Button x:Name="btnAlert" Text="Alert me when the bathroom is available" IsVisible="False" WidthRequest="35" HeightRequest="60"/>
-
     </StackLayout>
+    
 </ContentPage>

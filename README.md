@@ -1,6 +1,7 @@
 # rpi-bathroom-monitor
 
 #### Check bathroom status (available/occupied) via android or iOS
+[Download APK](https://drive.google.com/uc?authuser=0&id=1-hrz6XFFaplhNg2yP2GjyWo5SVMJG8IR&export=download)
 
 This repo contains 2 projects one is a stand alone webserver that runs on a raspberry pi as a startup service. The other is a xamarin client. The stand alone web server monitors a reed switch connected to the GPIO and also exposes an http service that allow the android/ios client to view the bathroom status.
 
